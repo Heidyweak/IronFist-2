@@ -1,0 +1,2484 @@
+html body{margin: 0; padding: 0; font-family: sans-serif;}/*RESTABLESCO LA PAGINA, SI MARGEN EN LOS BORDES*/
+
+
+#Fondo {background-image: url(IMG/nebulosaaa.png) ; color: white; background-attachment: fixed; background-repeat: no-repeat;
+background-size: 100% 120%;
+ }
+
+
+/*CONTENEDOR DE TODOS LOS CONTENEDORES*/
+
+
+.Contenedor_Supremo{width: auto; height: 100vh; overflow: hidden;} /*ESTE ES EL CONTENEDOR DONDE SE DESLIZAN TODOS LOS
+                                                                    CONTENEDOR*/
+
+/*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
+
+.Contenedor_RC {width: 7vw; height: 3vw; border-radius: 3rem; background: transparent; border: 3px solid white; position: relative;
+left: 44%; top: 5%; cursor: pointer;}
+.Recursos {width: 40%; height: 100%; border-radius: 50%; background: white; margin-left: 0%; transition: 1s;}
+
+/* ESTILOS PARA EL CONTENEDOR Y EL LOGO NUEVO */
+.contenedor_imagen_logo {
+  position: relative;
+  width: 100%;
+  max-width: 130px; /* <--- Cambia este valor para achicar o agrandar el logo */
+  height: auto;
+  margin: 15px auto; /* <--- Centra el contenedor automáticamente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 885px;
+  height: 105px;
+}
+
+.contenedor_imagen_logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(0, 183, 255, 0.6)); /* Opcional: le da un brillo neón acorde a tu diseño */
+}
+/*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
+
+.Seccion_01{width: 100%; height: 100vh; overflow: hidden; position: relative; top: 0px; display: flex; flex-direction: column; align-items: center; justify-content: center;}/*ESTE ES EL CONTENEDOR DE
+                                                                                                            LA SECCION 01*/
+
+/* TITULO PRINCIPAL "IRON FIST"  */
+.Nombre {
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 150px !important; /* <--- AQUÍ AJUSTAS EL TAMAÑO (110px, 130px, 140px, etc.) */
+  line-height: 1 !important;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 12%;
+  padding-bottom: 0%;
+  margin: 10px 0;
+  
+  /* Degradado metálico de arriba hacia abajo */
+  background: linear-gradient(180deg, #ffffff 0%, #b3e5ff 45%, #3a9bdc 75%, #1e5a99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Resplandor neón azul */
+  filter: 
+    drop-shadow(0 0 5px rgba(255, 255, 255, 0.575))
+    drop-shadow(0 0 15px rgba(82, 165, 219, 0.9))
+    drop-shadow(0 0 35px rgba(0, 183, 255, 0.7));
+}
+
+/* Subtítulo "¿LISTO PARA DEFENDER EL PLANETA?" */
+.Texto_Principal {
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 1 !important;
+  font-size: 30px !important;
+  letter-spacing: 10px;
+  color: #e6f7ff;
+  text-align: center;
+  position: relative;
+  top: 120px;
+
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Resplandor azul */
+  text-shadow: 
+    0 0 5px #ffffff,
+    0 0 10px rgba(82, 165, 219, 0.9),
+    0 0 20px rgba(0, 183, 255, 0.8);
+}
+
+/* Asegurar posicionamiento en la primera sección */
+.Seccion_01 {
+  position: relative;
+}
+
+/* NOMBRE DE LA VERSION 2.0 DE IRON FISTssss*/
+.version-tag {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  pointer-events: none;
+  text-shadow: 0 0 6px rgba(82, 165, 219, 0.5);
+}
+
+.Boton {
+  position: relative;
+  width: 20vw;
+  height: 4vw;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 7%;
+  
+  /* Fondo azul oscuro semi-transparente */
+  background: rgba(10, 24, 46, 0.85);
+  
+  /* Borde azul interno con brillo */
+  border: 2px solid #52a5db;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 8px rgba(82, 165, 219, 0.6),
+    inset 0 0 10px rgba(82, 165, 219, 0.4);
+  
+  outline: none;
+  transition: all 0.3s ease;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efecto Hover */
+.Boton:hover {
+  background: rgba(15, 38, 70, 0.95);
+  color: #00ffff;
+  border-color: #00ffff;
+  box-shadow: 
+    0 0 18px rgba(0, 255, 255, 0.8),
+    inset 0 0 12px rgba(0, 255, 255, 0.6);
+  transform: scale(1.03);
+}
+
+/* Base de las 4 esquinas rojas neón */
+.Boton .corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px #ff2a6d);
+}
+
+/* Esquina Superior Izquierda */
+.Boton .top-left {
+  top: -8px;
+  left: -8px;
+  border-top: 4px solid #ff2a6d;
+  border-left: 4px solid #ff2a6d;
+  border-top-left-radius: 12px;
+}
+
+/* Esquina Superior Derecha */
+.Boton .top-right {
+  top: -8px;
+  right: -8px;
+  border-top: 4px solid #ff2a6d;
+  border-right: 4px solid #ff2a6d;
+  border-top-right-radius: 12px;
+}
+
+/* Esquina Inferior Izquierda */
+.Boton .bottom-left {
+  bottom: -8px;
+  left: -8px;
+  border-bottom: 4px solid #ff2a6d;
+  border-left: 4px solid #ff2a6d;
+  border-bottom-left-radius: 12px;
+}
+
+/* Esquina Inferior Derecha */
+.Boton .bottom-right {
+  bottom: -8px;
+  right: -8px;
+  border-bottom: 4px solid #ff2a6d;
+  border-right: 4px solid #ff2a6d;
+  border-bottom-right-radius: 12px;
+}
+
+/*SECCION REGLAS ------------------------------------------------------------------------------------------------------*/
+
+
+
+#Reglas { 
+  position: relative; 
+  width: 100%; 
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 6, 16, 0.88);
+}
+
+/* MARCO RECTANGULAR PRINCIPAL */
+.Marco_Principal_Reglas {
+  width: 72%;
+  max-width: 1100px;
+  height: auto; 
+  min-height: 540px;
+  background: rgba(8, 22, 45, 0.65);
+  border: 2px solid #1e6fa8;
+  border-radius: 16px;
+  box-shadow: 
+    0 0 25px rgba(0, 183, 255, 0.25),
+    inset 0 0 35px rgba(0, 183, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 28px 26px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITULO DE LA SECCION */
+.Titulo_Reglas {
+  font-size: 1.9vw; 
+  margin: 0 0 20px 0;
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.9),
+    0 0 15px rgba(82, 165, 219, 0.9),
+    0 0 30px rgba(0, 183, 255, 0.7);
+}
+
+/* ESTRUCTURA QUE ALINEA IZQUIERDA Y DERECHA */
+.Contenedor_Reglas_Layout {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* COLUMNA IZQUIERDA (IMAGEN Y BOTON) */
+.Columna_Izquierda {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Empuja el botón al fondo */
+}
+
+.Contenedor_Marco_Imagen {
+  width: 100%;
+  border: 2px solid #00b7ff;
+  border-radius: 10px;
+  padding: 4px;
+  background: rgba(0, 183, 255, 0.05);
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.3);
+  box-sizing: border-box;
+}
+
+.Img_reglas { 
+  width: 100%; 
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* BOTON EMPUJADO MAS ABAJO */
+#Reglas .Columna_Izquierda .Boton {
+  margin: 0;
+  margin-top: 35px !important; /* <--- Ajusta la distancia con respecto a la imagen */
+  width: 100%;
+  height: 48px;
+  font-size: 0.95vw;
+  text-transform: uppercase;
+}
+
+/* COLUMNA DERECHA (3 TARJETAS) */
+.Contenedor_Columnas_Reglas {
+  width: 60%;
+  display: flex;
+  gap: 12px;
+}
+
+/* TARJETAS CON ALTURA PROPORCIONAL */
+.Regla_Tarjeta_Vertical {
+  flex: 1;
+  min-height: 330px;
+  background: rgba(5, 18, 38, 0.85);
+  border: 1.5px solid #0a5f9e;
+  border-radius: 10px;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.15), inset 0 0 15px rgba(0, 183, 255, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.Regla_Tarjeta_Vertical:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* BORDES SUPERIORES DE COLOR */
+.Regla_Verde { border-top: 4px solid #00ff66; }
+.Regla_Amarilla { border-top: 4px solid #ffcc00; }
+.Regla_Roja { border-top: 4px solid #ff2a6d; }
+
+/* ENCABEZADOS DE LAS TARJETAS */
+.Regla_Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Regla_Icono {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #00b7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ffff;
+  font-size: 14px;
+  margin-bottom: 6px;
+  background: rgba(0, 183, 255, 0.1);
+}
+
+.Regla_Tarjeta_Vertical h3 {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.85vw !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+}
+
+.Regla_Tarjeta_Vertical p {
+  margin: 0;
+  text-align: left;
+  font-size: 0.72vw !important;
+  color: #8cbcdc;
+  line-height: 1.35;
+  font-family: sans-serif;
+}
+/*SEGUNDA SECCION------------------------------------------------------------------------------------------------------*/
+
+#Seccion_2 {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.Titulo_historia{
+  font-family: 'Orbitron', sans-serif !important; 
+  font-weight: 900 !important;
+  text-align: left; 
+  font-size: 40px; 
+  position: absolute; 
+  left: -100%;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(82, 165, 219, 0.9);
+}
+
+.Imgane_metiorito{position: relative; top: 60px; left: 800px; width:700px;transform: translateX(-235px); }/*ESTA ES LA IMAGEN DEL METIORITO CALLENDO A LA TIERRA*/
+/*pitt cambio el tamaño de su imagen que puso del meteoro*/
+
+.Contenedor_Historia{
+  width: 40%;     /*ESTE ES EL CONENTENEDOR DE LA HISTORIA*/
+  background: rgba(10, 24, 46, 0.85);
+  color: #ffffff; 
+  border: 1px solid #52a5db;
+  border-radius: 10px;
+  padding: 2%; 
+  float: left;
+  position: relative; 
+  left: 30%; 
+  top: 550px;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.2);
+}
+
+.Boton_preparado{
+  width: 70%; 
+  height: 6vh; /*ESTE ES EL BOTON DE LA HISTORIA*/
+  background: #00b7ff; 
+  display: flex; 
+  font-size: 1.2vw;
+  justify-content: center; 
+  align-items: center;
+  cursor: pointer; 
+  color: white; 
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.Boton_preparado:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.Contenedor_narracion {width: 9vh; height: 9vh; background: black; color: white; border-radius: 0.5rem;
+display: flex; justify-content: center; align-items: center; cursor: pointer; margin-left: 10%; border: 1px solid #52a5db;}
+#VOLUMEN{font-size: 90%; }
+#PAUSE {display: none;}
+.BOTONES_2 {display: flex; align-items: center;  margin-top: 5%; height: 9vh; width: 100%; overflow: hidden;
+margin: auto;}
+
+
+/*TERCERA SECCION------------------------------------------------------------------------------------------------------*/
+
+.Titulo-Jugar{text-align: center; /*TITULO DE LA ULTIMA SECCION*/
+font-family: 'Orbitron', sans-serif !important; text-align: center;
+font-size: 60px;position: relative; top: 0%; left: -110%; padding-bottom: 2%;}
+   
+
+.Tituloar_Juego_5 {font-family: 'Orbitron', sans-serif !important; text-align: center; font-size: 45px; color: #ffffff; text-shadow: 0 0 15px rgba(0, 183, 255, 0.8);}
+
+.Contenedor_Mensaje_Star{height: 60%; width: 100%; left: 0%;  background: transparent;
+position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
+
+/*FONDO DE LA SECCION PRINCIPAL*/
+.Seccion_Juego {
+  width: 100%; 
+  height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column; 
+  position: absolute; 
+  top: 0%; 
+  left: -100%;  
+  transition: 2s;      
+}
+    
+    /*ESTILOS DENTRO DEL CONTENEDOR DEL JUEGO*/
+    .Contenedor {width: 900px; height: 500px; 
+    border: 3px solid #00ffff; 
+    background: url(IMG/img.103.gif) no-repeat 50% 50%; 
+    background-size: cover; position: relative; top: 2%; overflow: hidden; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
+
+    /*CABEZARA DENTRO DEL JUEGO*/
+    .Cabezera {height: 70px; 
+    border: 3px solid #00ffff; 
+    background: rgba(10, 24, 46, 0.85); 
+    border-bottom: none; display: flex; 
+    align-items: center; position: relative; color: white;}
+    
+    /*Pantalla start del inicio del juego*/
+    .Start {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75);
+    position: absolute; top: 0%; z-index: 1000; 
+    display: flex; align-items: center; 
+    justify-content: center; flex-direction: column; 
+    color: white; text-align: center;}
+    
+    /*Boton de la pantalla start*/
+    .Play {background: #00b7ff; color: white;
+    width: 18%; height: 15%; display: flex; 
+    align-items: center; left: 0px;
+    justify-content: center; cursor: pointer;
+    position: relative;  transition: 0.3s; top: 18%;
+    font-family: 'Orbitron', sans-serif; font-weight: 700; margin: auto; border-radius: 6px;}
+
+    .Play:hover { background: #00ffff; color: black; box-shadow: 0 0 15px #00ffff; }
+
+    /*TITULO CENTRAL DE START*/
+    .Texo {font-size: 32px;
+    left: 0px;  transition: 2s;
+    font-family: 'Orbitron', sans-serif !important;
+    line-height: 50px; margin-top: 0% ;}
+
+    .Pollo{font-family: 'Orbitron', sans-serif !important; margin-top: 0%;}
+    
+    #Contenedor_contador {height: 100%; 
+    display: table; position: absolute;}
+    
+    /*ESTILOS DE LOS NUMEROS DEL COTEO EN START*/
+    #RGB {font-size: 220px; position: relative; 
+    font-family: 'Orbitron', sans-serif !important;
+    display: table-cell; vertical-align: middle; }
+    
+    /*PANTALLA DE PAUSE*/
+    .Pausa_Pantalla {position: absolute; top: 0%; width: 100%;
+    height: 100%; background: rgba(0, 0, 0, 0.7);
+    text-align: center; z-index: 1000; display: none;}
+
+    .GANASTE_PANTALLA {position: absolute; width: 100%; height: 100%; background: rgba(10, 35, 20, 0.9);
+    z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none; border: 2px solid #00ff66;}
+
+    .GANASTE_PANTALLA h1 {font-family: 'Orbitron', sans-serif !important; color: #00ff66;
+    text-align: center; font-size: 2rem;}
+
+    .GANASTE_PANTALLA h3 {text-align: center; padding-left: 10%; padding-right: 10%; color: #ffffff;
+    font-family: sans-serif;}
+    
+    #Sin_Audio {display: none; font-size: 20px; color: white;}
+
+    #Ganaste_audio {font-size: 20px; color: white;}
+
+    /*ESTILOS GENERALES DE LOS METIORITOS*/
+    .Meteiorito {cursor: pointer; display: table; 
+    position: absolute; z-index: 1000; }
+    
+    /*ESTILOS INDIVIDUALES DE MIS DOS METIORITOS*/
+    #Meteiorito{position: absolute; top: 0px; left: -10%;  transition: 2.4s;}
+    #Meteiorito2{position: absolute; top: 0px; left: -10%; transition: 2.4s;}
+    
+    /*ESTILO DEL PLANETA*/
+    .Planeta {position: absolute; top: 12%; left: 80%;
+        animation-name: rotation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes rotation {
+      0% {
+        transform:rotate(0deg);
+      }
+      100% {
+        transform:rotate(360deg);
+      }
+    }
+    
+    /*ESTILO DEL LIMITE EN EL JUEGO*/
+    .Limite {height: 100%; width: 50px;
+    border-left: 3px dashed #ff2a6d; 
+    position: absolute; top: 0%; left: 70%;}
+    
+    /*ESTILOS DEL SPAN Y DEL TEXTO DE TIEMPO*/
+    .Tiempo {display: flex; align-items: center;
+    flex-direction: column;
+    width: 20%; height: 70%; color: #ffffff; 
+    font-size: 13px; font-family: 'Orbitron', sans-serif; }
+    
+    /*ESTILOS DEL SPAN Y DEL TEXTO DE PUNTAJE*/
+    .Puntaje {display: flex; align-items: center; 
+    flex-direction: column; 
+    width: 20%; height: 70%; color: #ffffff; 
+    font-size: 13px; font-family: 'Orbitron', sans-serif; }
+    
+    /*ESTILOS DEL BOTON DE PAUSE*/
+    .Pause {width: 25%; height: 70%; font-size: 12px;
+    background: #00b7ff; display: flex;
+    align-items: center; justify-content: center;
+    color: white; cursor: pointer; position: relative;
+    left: 30%; border-radius: 4px; font-family: 'Orbitron', sans-serif;}
+    
+    /*MENSAJE DENTRO DE PAUSE*/
+    .Mensaje_Pause{font-size: 40px; color: white;
+     display: table-cell; vertical-align: middle;
+      font-family: 'Orbitron', sans-serif !important;}
+
+.NEXT {width: 15vw; height: 3vw; background: rgb(0, 132, 255); font-size: 0.9vw; display: flex; align-items: center; justify-content: center; cursor: pointer; float: right;
+margin-left: 12%; font-family: 'Orbitron', sans-serif; border-radius: 4px;}
+
+.Contenedor_LVL{display: flex; justify-content: center; align-items: center; width: 100%; position: relative; top: 2%;}
+.Nada {width: 45vw; height: auto; background: rgba(10, 24, 46, 0.85); border: 1px solid #52a5db; color: white; position: relative; left: 6%; border-radius: 6px; }
+.Nada h2 {padding-left: 3%; padding-right: 3%; font-size: 1.1vw; font-family: 'Orbitron', sans-serif;}
+.Nada p {padding-left: 3%; padding-right: 3%; font-size: 0.9vw;}
+
+/*BLOQUEO DE NIVELES*/
+#NIVEL_01 {display: block;}
+#NIVEL_02 {display: none;}
+#NIVEL3 {display: none;}
+
+/*RESPONSIVE */
+@media (max-width: 1196px){
+    .Imgane_metiorito{width: 47%; top: 16vw;}
+    .Boton_preparado{width: 38%;}
+    .Titulo-Jugar {font-size: 40px;}
+    .Contenedor_Historia{top: 15vw; font-size: 1.3vw;}
+}
+
+/*LVL 2 ---------------------------------------------------------------------------------------------------------*/
+
+    .Contenedorlvl2 {width: 900px; height: 500px; 
+    border: 3px solid #0011ff; 
+    background: url(IMG/img.105.gif) no-repeat 50% 50%;
+    background-size: cover; position: relative; top: 4%; overflow: hidden; border-radius: 8px;}
+    
+    .Startlvl2 {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75);
+    position: absolute; top: 0%; z-index: 1000; 
+    display: flex; align-items: center; 
+    justify-content: center; flex-direction: column; 
+    color: white; text-align: center;}
+    
+    .Playlvl2 {background: rgb(0, 119, 255); color: white;
+    width: 18%; height: 9%; display: flex; 
+    align-items: center; left: 0px;
+    justify-content: center; cursor: pointer;
+    position: relative; transition: 2s; margin-top: -2%;
+    font-family: 'Orbitron', sans-serif; border-radius: 6px;}
+    
+    .Texolvl2 {font-size: 32px; position: relative;
+        left: 0px; top: -15%; transition: 2s;
+        font-family: 'Orbitron', sans-serif !important;
+        line-height: 50px;}
+
+    #Dificultad {display: flex; 
+    justify-content: center; width: 100%;
+    position: absolute; top: 45%; left: 0px; transition: 2s;}
+    
+    #Contenedor_contadorlvl2 {height: 100%; display: table; position: absolute;}
+    #RGBlvl2 {font-size: 220px; position: relative; font-family: 'Orbitron', sans-serif !important; display: table-cell; vertical-align: middle; }
+    
+    .Pausa_Pantallalvl2 {position: absolute; top: 0%; width: 100%;
+    height: 100%; background: rgba(0, 0, 0, 0.7);
+    text-align: center; z-index: 1000; display: none;}
+    
+    .GanastePantallaLvL2 {position: absolute; width: 100%; height: 100%; background: rgba(10, 35, 20, 0.9);
+        z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none; border: 2px solid #00ff66;}
+    
+    .GanastePantallaLvL2 h1 {font-family: 'Orbitron', sans-serif !important; color: #00ff66; text-align: center; font-size: 2rem;}
+    .GanastePantallaLvL2 h3 {text-align: center; padding-left: 10%; padding-right: 10%; color: #ffffff; font-family: sans-serif;}
+
+    .Meteioritolvl2 {cursor: pointer; display: table; position: absolute; z-index: 1000; }
+    #Meteioritolvl2{top: 0%; position: absolute; left: -30%; transition: 2s;}
+    #Meteiorito2lvl2{ top: 0%; position: absolute; left: -30%; transition: 2s;}
+    #Meteiorito3lvl2{top: 0%; position: absolute; left: -30%; transition: 2s;}
+    
+    .Planetalvl2 {
+        position: absolute; top: 12%; left: 80%;
+        animation-name: rotation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .Limitelvl2 {height: 100%; width: 50px; border-left: 3px dashed #ff2a6d; position: absolute; top: 0%; left: 70%;}
+    
+    .Cabezeralvl2 {height: 70px; border: 3px solid rgb(0, 119, 255); background: rgba(10, 24, 46, 0.85); border-bottom: none; display: flex; align-items: center; position: relative; color: white;}
+    
+    .Tiempolvl2, .Puntajelvl2 {display: flex; align-items: center; flex-direction: column; width: 20%; height: 70%; color: #ffffff; font-size: 13px; font-family: 'Orbitron', sans-serif;}
+    
+    .Pauselvl2 {width: 25%; height: 70%; font-size: 12px; background: rgb(0, 119, 255); display: flex; align-items: center; justify-content: center; color: white; cursor: pointer; position: relative; left: 30%; border-radius: 4px; font-family: 'Orbitron', sans-serif;}
+    
+    .Mensaje_Pauselvl2{font-size: 40px; color: white; display: table-cell; vertical-align: middle; font-family: 'Orbitron', sans-serif !important;}
+    
+    .Perdistelvl2 { color:aqua; }
+    .Aumentarpuntoslvl2 { color: white; }
+    
+/*TERCER NIVEL ----------------------------------------------------------------------------------------*/
+
+    .Contenedorlvl3 {
+        width: 900px;
+        height: 500px; 
+        border: 3px solid red; 
+        background: url(IMG/img.106.gif) no-repeat 50% 50% ;
+        background-size: cover;
+        position: relative;
+        top: 4%;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    
+    .Startlvl3 {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        position: absolute;
+        top: 0%;
+        z-index: 1000; 
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        flex-direction: column; 
+        color: white;
+        text-align: center;
+    }
+    
+    .Playlvl3 {
+        background: red;
+        color: white;
+        width: 18%;
+        height: 9%;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        transition: 2s;
+        font-family: 'Orbitron', sans-serif;
+        border-radius: 6px;
+    }
+    
+    #Dificultadlvl3{display: flex; justify-content: center; width: 100%; top: 49%; position: absolute; left: 0%; transition: 5s;}
+
+    .Textolvl3 {
+        font-size: 32px;
+        position: relative;
+        left: 0px; 
+        top: -7%;
+        transition: 2s;
+        font-family: 'Orbitron', sans-serif !important;
+        line-height: 50px;
+    }
+    
+    #Contenedor_contadorlvl3 { height: 100%; display: table; position: absolute; }
+    #RGBlvl3 { font-size: 220px; position: relative; font-family: 'Orbitron', sans-serif !important; display: table-cell; vertical-align: middle; }
+    
+    .Pausa_Pantallalvl3 {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        z-index: 1000;
+        display: none;
+    }
+    
+    .Meteoritolvl3 { cursor: pointer; display: table; position: absolute; top: 0%; z-index: 1000; }
+    #Meteoritolvl3{ top: 0%; left: -10%; transition: 1s; }
+    #Meteorito2lvl3{ top: 0%; position: absolute; left: -10%; transition: 2s; }
+    #Meteorito3lvl3{ top: 0%; position: absolute; left: -10%; transition: 3s; }
+    #Meteorito4lvl3{ top: 0%; position: absolute; left: -10%; transition: 4s; }
+    
+    .Planetalvl3{
+        position: absolute;
+        top: 12%;
+        left: 80%;
+        animation-name: rotation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .Limitelvl3 { height: 100%; width: 50px; border-left: 3px dotted red; position: absolute; top: 0%; left: 70%; }
+    
+    .Cabezeralvl3 {height: 70px; border: 3px solid red; background: rgba(10, 24, 46, 0.85); border-bottom: none; display: flex; position: relative; color: white;}
+    
+    .Tiempolvl3, .Puntajelvl3 {
+        display: flex; align-items: center; justify-content: center;
+        flex-direction: column;
+        width: 20%; height: 86%; color: white; 
+        font-size: 13px; font-family: 'Orbitron', sans-serif;
+    }
+    
+    .Pantalla_navelvl3 { display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; left: -100%; top: 0; }
+    .Pantalla_Nodrizalvl3 { display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; left: -100%; top: 32%; }
+    .Pantalla_nave2lvl3 { display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; left: -100%; top: 63%; }
+    
+    .Ovnislvl3 { width: 84px; transform: rotate(90deg); }
+    #Nodrizalvl3 { width: 140px; transform: rotate(90deg); }
+    
+    #Pantalla_creditoslvl3 { position: absolute; top: 0; width: 100%; height: 100%; background: transparent; transition: 2s; }
+    
+    #Creditoslvl3 {
+        height: 100%; width: 100%; display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: column; 
+        position: absolute; 
+        top: -100%; font-size: 22px; 
+        color: snow; 
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    #Proximolvl3 {
+        height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; bottom: -100%; font-size: 26px; color: snow; font-family: 'Orbitron', sans-serif;
+    }
+    
+    .Pauselvl3{
+        width: 25%;
+        height: 70%;
+        font-size: 12px;
+        background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        top: 15%;
+        left: 30%;
+        border-radius: 4px;
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    .Mensaje_Pauselvl3{
+        font-size: 40px;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: 'Orbitron', sans-serif !important;
+    }
+  
+  
+  /* ==========================================================================
+   CORRECCIÓN DEFINITIVA DE PANTALLA COMPLETA Y HUD ARCADE
+   ========================================================================== */
+
+.Seccion_Juego {
+  width: 100vw !important; 
+  height: 100vh !important; 
+  position: fixed !important; 
+  top: 0 !important; 
+  left: 0 !important;  
+  z-index: 99999 !important;
+  overflow: hidden !important;
+  background: #020610 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateX(-100vw) !important;
+}
+
+.Seccion_Juego.juego-activo {
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateX(0) !important;
+}
+
+.Juego_Pantalla_Completa {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: url('IMG/img.103.gif') no-repeat center center / cover !important;
+  overflow: hidden !important;
+}
+
+.Contenedor_Meteorito,
+.Meteorito_Con_Fuego {
+  position: absolute !important;
+  top: 0;
+  left: -160px;
+  width: clamp(56px, 7vw, 92px);
+  height: clamp(56px, 7vw, 92px);
+  cursor: pointer;
+  z-index: 1000;
+  transition: 2.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Img_Meteorito {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  filter: drop-shadow(0 0 12px rgba(255, 90, 20, 0.65));
+}
+
+.Flama_Fuego {
+  position: absolute;
+  left: -60%;
+  width: 95%;
+  height: 42%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 82% 50%, rgba(255,255,170,0.95) 0%, rgba(255,170,25,0.86) 28%, rgba(255,75,8,0.62) 56%, rgba(255,0,0,0) 78%);
+  filter: blur(6px);
+  pointer-events: none;
+  animation: fuegoMeteorito 0.22s infinite alternate ease-in-out;
+}
+
+.Flama_Fuego::before,
+.Flama_Fuego::after {
+  content: "";
+  position: absolute;
+  inset: 14% 22% 14% -32%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 100% 50%, rgba(255,215,55,0.65), rgba(255,74,8,0.42) 48%, rgba(255,0,0,0) 74%);
+}
+
+.Flama_Fuego::after {
+  inset: 35% 55% 35% -52%;
+  background: rgba(255, 235, 150, 0.55);
+  filter: blur(3px);
+}
+
+@keyframes fuegoMeteorito {
+  from {
+    transform: scaleX(0.92) scaleY(0.9);
+    opacity: 0.72;
+  }
+  to {
+    transform: scaleX(1.12) scaleY(1.08);
+    opacity: 1;
+  }
+}
+
+/* --- HUD SUPERIOR CENTRADO Y ENCAPSULADO --- */
+.HUD_Superior_Game {
+  position: fixed !important;
+  top: 15px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 100000 !important;
+  width: 94% !important;
+  max-width: 1200px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  pointer-events: none !important;
+}
+
+.HUD_Box {
+  pointer-events: auto;
+  background: rgba(5, 18, 38, 0.9);
+  border: 1.5px solid #00b7ff;
+  border-radius: 12px;
+  padding: 6px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.3), inset 0 0 8px rgba(0, 183, 255, 0.2);
+}
+
+.HUD_Box i {
+  color: #00ffff;
+  font-size: 14px;
+}
+
+.HUD_Label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #8cbcdc;
+  letter-spacing: 1px;
+}
+
+.HUD_Valor {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.HUD_Volumen_Box input[type="range"] {
+  width: 70px;
+  accent-color: #00ffff;
+  cursor: pointer;
+}
+
+/* --- HUD INFERIOR CENTRADO Y ENCAPSULADO --- */
+.HUD_Inferior_Game {
+  position: fixed !important;
+  bottom: 15px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 100000 !important;
+  width: 94% !important;
+  max-width: 1200px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  pointer-events: none !important;
+}
+
+.HUD_Escudo_Barra {
+  pointer-events: auto;
+  background: rgba(5, 18, 38, 0.9);
+  border: 1.5px solid #00b7ff;
+  border-radius: 10px;
+  padding: 6px 14px;
+  width: 220px;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.3);
+}
+
+.HUD_Escudo_Barra label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  color: #00ffff;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.Vida_Planeta_Texto {
+  color: #ffffff;
+  margin-left: 6px;
+}
+
+.Barra_Outer {
+  width: 100%;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #00b7ff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.Barra_Inner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #00ff66, #00ffff);
+  box-shadow: 0 0 6px #00ffff;
+  transition: width 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.Barra_Inner.vida-media {
+  background: linear-gradient(90deg, #ffe94a, #ff9f1c);
+  box-shadow: 0 0 8px #ffe94a;
+}
+
+.Barra_Inner.vida-baja {
+  background: linear-gradient(90deg, #ff2d2d, #ff7a00);
+  box-shadow: 0 0 10px #ff2d2d;
+}
+
+.Boton_Pausar_HUD {
+  pointer-events: auto;
+  background: rgba(5, 18, 38, 0.95);
+  border: 2px solid #00b7ff;
+  border-radius: 15px;
+  padding: 8px 30px;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+.Boton_Pausar_HUD:hover {
+  background: #00b7ff;
+  color: #000;
+  box-shadow: 0 0 25px #00b7ff;
+}
+
+.HUD_Nivel_Badge {
+  pointer-events: auto;
+  background: rgba(5, 18, 38, 0.9);
+  border: 1.5px solid #00b7ff;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #00ffff;
+  letter-spacing: 2px;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.3);
+}
+
+/* --- TAMAÑO Y POSICIÓN CORRECTA DEL PLANETA Y LÍNEA EN PANTALLA COMPLETA --- */
+.Planeta_Fullscreen {
+  position: absolute !important;
+  right: -250px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 600px !important;
+  height: auto !important;
+  animation: rotation 25s infinite linear;
+  filter: drop-shadow(0 0 25px rgba(0, 183, 255, 0.4));
+  z-Index: 5 !important;
+}
+
+.Limite_Laser_Red {
+  height: 100vh !important;
+  width: 2px !important;
+  background: #00ffff !important;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 380px !important;
+  z-index: 10 !important;
+}
+
+/* --- OVERLAYS EN PANTALLA COMPLETA --- */
+.Start, .Pausa_Pantalla, .GANASTE_PANTALLA {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 200000 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* --- CORRECCIÓN DE OVERLAYS (OCULTAR PANTALLAS DE GANASTE Y PAUSA AL INICIO) --- */
+
+/* PANTALLA START (Solo esta debe verse al entrar) */
+.Start {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 200000 !important;
+  display: flex; /* Se muestra al iniciar el nivel y JavaScript puede ocultarla */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(2, 6, 16, 0.88);
+}
+
+/* PANTALLA PAUSA (Oculta por defecto) */
+.Pausa_Pantalla {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 200000 !important;
+  display: none; /* Oculta hasta presionar pausa */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* PANTALLA GANASTE / VERDE (Oculta por defecto) */
+.GANASTE_PANTALLA {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 200000 !important;
+  display: none; /* Oculta hasta ganar el nivel */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(10, 35, 20, 0.95);
+}
+
+/* Flujo de niveles y boton siguiente */
+.Contenedor_LVL {
+  position: fixed !important;
+  right: 28px !important;
+  bottom: 28px !important;
+  top: auto !important;
+  width: auto !important;
+  z-index: 260000 !important;
+  display: none !important;
+  gap: 14px;
+}
+
+.Contenedor_LVL.nivel-disponible {
+  display: flex !important;
+}
+
+.Contenedor_LVL .Nada {
+  display: none;
+}
+
+.NEXT {
+  width: auto !important;
+  min-width: 230px;
+  height: 54px !important;
+  margin: 0 !important;
+  padding: 0 22px;
+  float: none !important;
+  background: #00b7ff !important;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 183, 255, 0.65);
+}
+
+.NEXT h2 {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Niveles 2 y 3 con el mismo estilo de pantalla completa del nivel 1 */
+#NIVEL_02,
+#NIVEL3 {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background: #020610;
+  overflow: hidden;
+}
+
+#NIVEL_02 .Contenedorlvl2,
+#NIVEL3 .Contenedorlvl3 {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute !important;
+  inset: 0 !important;
+  top: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+#NIVEL_02 .Contenedorlvl2 {
+  background: url('IMG/img.105.gif') no-repeat center center / cover !important;
+}
+
+#NIVEL3 .Contenedorlvl3 {
+  background: url('IMG/img.106.gif') no-repeat center center / cover !important;
+}
+
+#NIVEL_02 .Cabezeralvl2,
+#NIVEL3 .Cabezeralvl3 {
+  position: fixed !important;
+  top: 15px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 94% !important;
+  max-width: 1200px !important;
+  height: auto !important;
+  border: 0 !important;
+  background: transparent !important;
+  z-index: 100000 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+#NIVEL_02 .Tiempolvl2,
+#NIVEL_02 .Puntajelvl2,
+#NIVEL_02 .Pauselvl2,
+#NIVEL3 .Tiempolvl3,
+#NIVEL3 .Puntajelvl3,
+#NIVEL3 .Pauselvl3 {
+  width: auto !important;
+  min-width: 170px;
+  height: 34px !important;
+  left: auto !important;
+  top: auto !important;
+  position: static !important;
+  background: rgba(5, 18, 38, 0.9) !important;
+  border: 1.5px solid #00b7ff !important;
+  border-radius: 12px !important;
+  padding: 4px 16px !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.3), inset 0 0 8px rgba(0, 183, 255, 0.2);
+}
+
+#NIVEL_02 .Pauselvl2,
+#NIVEL3 .Pauselvl3 {
+  cursor: pointer;
+}
+
+#NIVEL_02 .Startlvl2,
+#NIVEL3 .Startlvl3,
+#NIVEL_02 .Pausa_Pantallalvl2,
+#NIVEL3 .Pausa_Pantallalvl3,
+#NIVEL_02 .GanastePantallaLvL2 {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 200000 !important;
+}
+
+#NIVEL_02 .Meteioritolvl2,
+#NIVEL3 .Meteoritolvl3 {
+  width: clamp(56px, 7vw, 92px) !important;
+  height: clamp(56px, 7vw, 92px) !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+#NIVEL_02 .Planetalvl2,
+#NIVEL3 .Planetalvl3 {
+  position: absolute !important;
+  right: -250px !important;
+  left: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 600px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 25px rgba(0, 183, 255, 0.4));
+  z-index: 5 !important;
+}
+
+#NIVEL_02 .Limitelvl2,
+#NIVEL3 .Limitelvl3 {
+  height: 100vh !important;
+  width: 2px !important;
+  background: #00ffff !important;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff !important;
+  border: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 380px !important;
+  left: auto !important;
+  z-index: 10 !important;
+}
+
+/* Correccion: el HUD de niveles 2 y 3 comparte clase con el tablero antiguo */
+#NIVEL_02 .Contenedorlvl2:not(.Cabezeralvl2),
+#NIVEL3 .Contenedorlvl3:not(.Cabezeralvl3) {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  inset: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+#NIVEL_02 .Contenedorlvl2:not(.Cabezeralvl2) {
+  background: url('IMG/img.103.gif') no-repeat center center / cover !important;
+}
+
+#NIVEL3 .Contenedorlvl3:not(.Cabezeralvl3) {
+  background: url('IMG/img.103.gif') no-repeat center center / cover !important;
+}
+
+#NIVEL_02 .Cabezeralvl2,
+#NIVEL3 .Cabezeralvl3 {
+  position: fixed !important;
+  inset: auto !important;
+  top: 15px !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
+  width: 94vw !important;
+  max-width: 1200px !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  border: 0 !important;
+  background: transparent !important;
+  z-index: 100000 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+
+#NIVEL_02 .Cabezeralvl2 > div,
+#NIVEL3 .Cabezeralvl3 > div {
+  width: auto !important;
+  min-width: 170px !important;
+  height: 34px !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  padding: 4px 16px !important;
+  background: rgba(5, 18, 38, 0.9) !important;
+  border: 1.5px solid #00b7ff !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.3), inset 0 0 8px rgba(0, 183, 255, 0.2) !important;
+}
+
+#NIVEL_02 .Cabezeralvl2 h3,
+#NIVEL3 .Cabezeralvl3 h3 {
+  margin: 0 !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+#NIVEL_02 .Cabezeralvl2 span,
+#NIVEL3 .Cabezeralvl3 span {
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+#NIVEL_02 .Planetalvl2,
+#NIVEL3 .Planetalvl3 {
+  right: -250px !important;
+  width: 600px !important;
+}
+
+/* Ajuste final: niveles 2 y 3 usan el mismo HUD flotante del nivel 1 */
+#NIVEL_02 > .Cabezeralvl2.Contenedorlvl2,
+#NIVEL3 > .Cabezeralvl3.Contenedorlvl3 {
+  position: fixed !important;
+  top: 15px !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
+  width: 94% !important;
+  max-width: 1200px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  overflow: visible !important;
+  z-index: 100000 !important;
+  pointer-events: none !important;
+}
+
+#NIVEL_02 > .Cabezeralvl2 > div,
+#NIVEL3 > .Cabezeralvl3 > div {
+  pointer-events: auto !important;
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  width: auto !important;
+  min-width: 170px !important;
+  height: 34px !important;
+  margin: 0 !important;
+  padding: 4px 16px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: rgba(5, 18, 38, 0.9) !important;
+  border: 1.5px solid #00b7ff !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.3), inset 0 0 8px rgba(0, 183, 255, 0.2) !important;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+#NIVEL_02 > .Cabezeralvl2 h3,
+#NIVEL3 > .Cabezeralvl3 h3 {
+  margin: 0 !important;
+  color: #8cbcdc !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  letter-spacing: 1px !important;
+}
+
+#NIVEL_02 > .Cabezeralvl2 i,
+#NIVEL3 > .Cabezeralvl3 i {
+  color: #00ffff !important;
+  font-size: 14px !important;
+}
+
+#NIVEL_02 > .Cabezeralvl2 span,
+#NIVEL3 > .Cabezeralvl3 span {
+  color: #ffffff !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+#NIVEL_02 > .Cabezeralvl2 input[type="range"],
+#NIVEL3 > .Cabezeralvl3 input[type="range"] {
+  width: 70px !important;
+  accent-color: #00ffff;
+  cursor: pointer;
+}
+
+#NIVEL_02 .HUD_Inferior_Lvl,
+#NIVEL3 .HUD_Inferior_Lvl {
+  position: fixed !important;
+  bottom: 15px !important;
+  left: 50% !important;
+  top: auto !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  z-index: 100000 !important;
+  width: 94% !important;
+  max-width: 1200px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  pointer-events: none !important;
+}
+
+#NIVEL_02 .HUD_Inferior_Lvl .Boton_Pausar_HUD,
+#NIVEL3 .HUD_Inferior_Lvl .Boton_Pausar_HUD {
+  pointer-events: auto !important;
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  width: auto !important;
+  min-width: 150px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 8px 30px !important;
+}
+
+#NIVEL_02 .HUD_Inferior_Lvl .HUD_Escudo_Barra,
+#NIVEL_02 .HUD_Inferior_Lvl .HUD_Nivel_Badge,
+#NIVEL3 .HUD_Inferior_Lvl .HUD_Escudo_Barra,
+#NIVEL3 .HUD_Inferior_Lvl .HUD_Nivel_Badge {
+  pointer-events: auto !important;
+}
+
+#NIVEL_02 .Startlvl2,
+#NIVEL3 .Startlvl3 {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  overflow: hidden !important;
+}
+
+#NIVEL3 .Playlvl3 {
+  z-index: 200020 !important;
+  pointer-events: auto !important;
+}
+
+#NIVEL3 #Dificultadlvl3 {
+  pointer-events: none !important;
+}
+
+.Start .Contenedor_Mensaje_Star,
+#NIVEL_02 .Startlvl2,
+#NIVEL3 .Startlvl3 {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.Start .Contenedor_Mensaje_Star,
+#NIVEL_02 .Startlvl2,
+#NIVEL3 .Startlvl3 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  text-align: center !important;
+  gap: 24px !important;
+}
+
+#NIVEL_02 .Startlvl2[style*="display: none"],
+#NIVEL3 .Startlvl3[style*="display: none"] {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+.Start .Contenedor_Mensaje_Star {
+  width: 100vw !important;
+  height: 100vh !important;
+  top: 0;
+  left: 0;
+  overflow: hidden !important;
+}
+
+.Start .Texo,
+#NIVEL_02 .Texolvl2,
+#NIVEL3 .Textolvl3 {
+  position: relative !important;
+  top: auto;
+  left: 0;
+  order: 1;
+  margin: 0 !important;
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-family: 'Orbitron', sans-serif !important;
+  transition: 2s !important;
+}
+
+.Start .Box_Dificultad_Start,
+#NIVEL_02 #Dificultad,
+#NIVEL3 #Dificultadlvl3 {
+  position: relative !important;
+  top: auto;
+  left: 0;
+  order: 2;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  margin: 0 !important;
+  transition: 2s !important;
+}
+
+.Start .Box_Dificultad_Start img,
+#NIVEL_02 #Dificultad img,
+#NIVEL3 #Dificultadlvl3 img {
+  width: clamp(70px, 14vw, 160px) !important;
+  max-height: 120px !important;
+  object-fit: contain !important;
+}
+
+.Start .Pollo,
+#NIVEL_02 #Dificultad h1,
+#NIVEL3 #Dificultadlvl3 h1 {
+  margin: 0 !important;
+  font-size: clamp(16px, 2vw, 27px) !important;
+  line-height: 1.35 !important;
+  font-family: 'Press Start 2P', cursive !important;
+  color: #ffffff !important;
+}
+
+.Start .Play,
+#NIVEL_02 .Playlvl2,
+#NIVEL3 .Playlvl3 {
+  position: relative !important;
+  top: auto;
+  left: 0;
+  order: 3;
+  width: 18% !important;
+  min-width: 150px !important;
+  max-width: 210px !important;
+  height: 15% !important;
+  min-height: 48px !important;
+  max-height: 72px !important;
+  margin: 0 !important;
+  background: #00b7ff !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 6px !important;
+  transition: 0.3s ease, left 2s !important;
+  z-index: 200020 !important;
+}
+
+#NIVEL_02 .Playlvl2:hover,
+#NIVEL3 .Playlvl3:hover {
+  background: #00ffff !important;
+  color: black !important;
+  box-shadow: 0 0 15px #00ffff !important;
+}
+
+.HUD_Volumen_Box i.fas.fa-volume-up,
+.Volumenlvl2 i.fas.fa-volume-up,
+.Volumenlvl3 i.fas.fa-volume-up {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 26px !important;
+  min-width: 26px !important;
+  height: 18px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#NIVEL_02 .Startlvl2.cuenta-activa .Texolvl2,
+#NIVEL_02 .Startlvl2.cuenta-activa .Playlvl2,
+#NIVEL_02 .Startlvl2.cuenta-activa #Dificultad,
+#NIVEL3 .Startlvl3.cuenta-activa .Textolvl3,
+#NIVEL3 .Startlvl3.cuenta-activa .Playlvl3,
+#NIVEL3 .Startlvl3.cuenta-activa #Dificultadlvl3 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+#NIVEL_02 #Contenedor_contadorlvl2,
+#NIVEL3 #Contenedor_contadorlvl3 {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 200010 !important;
+  pointer-events: none !important;
+}
+
+#NIVEL_02 #RGBlvl2,
+#NIVEL3 #RGBlvl3 {
+  display: block !important;
+  position: static !important;
+  font-size: clamp(110px, 14vw, 220px) !important;
+  line-height: 1 !important;
+  color: #ffffff !important;
+}
+
+#NIVEL_02 .Pausa_Pantallalvl2,
+#NIVEL3 .Pausa_Pantallalvl3 {
+  cursor: pointer;
+}
+
+.Pausa_Pantalla[style*="display: table"],
+#NIVEL_02 .Pausa_Pantallalvl2[style*="display: table"],
+#NIVEL3 .Pausa_Pantallalvl3[style*="display: table"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+.Pausa_Pantalla[style*="display: table"] .Mensaje_Pause,
+.Pausa_Pantalla[style*="display: flex"] .Mensaje_Pause {
+  display: block !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+}
+
+.Pausa_Pantalla[style*="display: table"] .Boton_Reanudar_Pausa,
+.Pausa_Pantalla[style*="display: flex"] .Boton_Reanudar_Pausa {
+  display: block !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+#NIVEL_02 .Pausa_Pantallalvl2::after,
+#NIVEL3 .Pausa_Pantallalvl3::after {
+  content: "";
+  display: block;
+}
+
+.Boton_Reanudar_Pausa {
+  margin-top: 26px;
+  padding: 12px 34px;
+  background: rgba(5, 18, 38, 0.95);
+  border: 2px solid #00b7ff;
+  border-radius: 14px;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(0, 183, 255, 0.45), inset 0 0 8px rgba(0, 183, 255, 0.22);
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.Boton_Reanudar_Pausa:hover {
+  background: #00b7ff;
+  color: #000000;
+  box-shadow: 0 0 26px #00b7ff;
+}
+
+#Pantalla_creditoslvl3.Seccion_Creditos_Finales {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 200vh !important;
+  display: none;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #000000;
+  z-index: 300000 !important;
+
+  transform: translateY(-400px);
+}
+
+/* --- PANTALLA GENERAL CON CENTRADO VERTICAL Y HORIZONTAL --- */
+#Pantalla_creditoslvl3 {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: none;
+  overflow: hidden !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #000000 !important;
+  z-index: 300000 !important;
+  gap: 15px;
+}
+
+#Pantalla_creditoslvl3.creditos-activos {
+  display: flex !important;
+}
+
+/* --- TÍTULO "IRON FIST" ARRIBA --- */
+#Pantalla_creditoslvl3 #Creditoslvl3::before {
+  content: "IRON FIST";
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #52a5db;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(82, 165, 219, 0.6);
+  margin-bottom: 8px;
+}
+
+#Pantalla_creditoslvl3 #Creditoslvl3 {
+  text-align: center;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- "DESARROLLADO POR:" (Primer párrafo real) --- */
+#Pantalla_creditoslvl3 #Creditoslvl3 p:first-of-type {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* --- TODOS LOS NOMBRES DE LOS DESARROLLADORES (Uniformes) --- */
+#Pantalla_creditoslvl3 #Creditoslvl3 p:not(:first-of-type) {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin: 6px 0;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+/* --- TU BOTÓN (Valores intactos tal cual los pediste) --- */
+#Pantalla_creditoslvl3 .Boton_Volver_Inicio {
+  display: none;
+}
+
+#Pantalla_creditoslvl3.creditos-activos .Boton_Volver_Inicio {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  bottom: 800px;
+  transform: translateX(-50%);
+  z-index: 260000;
+  align-items: center;
+  justify-content: center;
+  min-width: 230px;
+  min-height: 48px;
+  padding: 0 24px;
+  background: rgba(10, 24, 46, 0.94);
+  border: 2px solid #52a5db;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 0 14px rgba(82, 165, 219, 0.42);
+}
+
+#Pantalla_creditoslvl3.creditos-activos .Boton_Volver_Inicio:hover {
+  background: rgba(0, 183, 255, 0.9);
+  border-color: #00ffff;
+  color: #000000;
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.55);
+}
+
+/* Ajuste visual sobrio para el capitulo I */
+#Seccion_2 {
+  overflow: hidden;
+}
+
+#Seccion_2 .Titulo_historia {
+  top: 8% !important;
+  font-size: clamp(30px, 3vw, 42px) !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(82, 165, 219, 0.65) !important;
+}
+
+#Seccion_2 .Imgane_metiorito {
+  position: absolute !important;
+  top: 17% !important;
+  left: -100%;
+  width: min(72vw, 820px) !important;
+  height: 34vh !important;
+  object-fit: cover;
+  border: 1.5px solid #1e6fa8;
+  border-radius: 8px;
+  background: rgba(2, 6, 16, 0.9);
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 14px rgba(0, 183, 255, 0.25));
+}
+
+#Seccion_2 .Contenedor_Historia {
+  position: absolute !important;
+  width: min(72vw, 820px) !important;
+  top: 55% !important;
+  left: auto !important;
+  right: -100%;
+  transform: translateX(50%);
+  background: rgba(8, 22, 45, 0.92) !important;
+  border: 1.5px solid #1e6fa8 !important;
+  border-left: 5px solid #00b7ff !important;
+  border-radius: 8px !important;
+  padding: 26px 30px !important;
+  box-shadow: 0 0 18px rgba(0, 183, 255, 0.18) !important;
+  box-sizing: border-box;
+  color: #c6d8e6 !important;
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+
+#Seccion_2 .Contenedor_Historia h3 {
+  margin: 0 0 16px 0 !important;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: clamp(16px, 1.5vw, 22px);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(0, 183, 255, 0.5);
+}
+
+#Seccion_2 .BOTONES_2 {
+  height: auto !important;
+  margin: 24px 0 0 0 !important;
+  overflow: visible !important;
+}
+
+#Seccion_2 .Boton_preparado {
+  width: min(72%, 330px) !important;
+  min-height: 46px;
+  height: auto !important;
+  background: rgba(10, 24, 46, 0.92) !important;
+  border: 2px solid #52a5db;
+  color: #ffffff;
+  font-size: clamp(12px, 1vw, 15px) !important;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(82, 165, 219, 0.25);
+}
+
+#Seccion_2 .Boton_preparado:hover {
+  background: rgba(0, 183, 255, 0.86) !important;
+  color: #000000;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.45) !important;
+}
+
+#Seccion_2 .Contenedor_narracion {
+  width: 46px !important;
+  height: 46px !important;
+  margin-left: 14px !important;
+  background: rgba(2, 6, 16, 0.9) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 0 10px rgba(82, 165, 219, 0.22);
+}
+
+.Regla_Icono i,
+.HUD_Box i,
+#NIVEL_02 > .Cabezeralvl2 i,
+#NIVEL3 > .Cabezeralvl3 i,
+.Boton_Pausar_HUD i,
+.HUD_Escudo_Barra i {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.Regla_Icono i,
+#Seccion_2 #VOLUMEN,
+#Seccion_2 #PAUSE,
+.HUD_Box i,
+#NIVEL_02 > .Cabezeralvl2 i,
+#NIVEL3 > .Cabezeralvl3 i {
+  width: 18px !important;
+  min-width: 18px !important;
+  height: 18px !important;
+  line-height: 18px !important;
+  text-align: center !important;
+  flex: 0 0 18px !important;
+  overflow: visible !important;
+}
+
+#Seccion_2 #VOLUMEN,
+#Seccion_2 #PAUSE {
+  align-items: center !important;
+  justify-content: center !important;
+  width: 34px !important;
+  min-width: 34px !important;
+  flex: 0 0 34px !important;
+  color: #ffffff !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.fa-volume-up {
+  width: 26px !important;
+  min-width: 26px !important;
+  flex-basis: 26px !important;
+  font-size: 14px !important;
+}
+
+/* Avisos de victoria mas suaves y en rectangulo */
+.GANASTE_PANTALLA,
+#NIVEL_02 .GanastePantallaLvL2 {
+  background: rgba(2, 6, 16, 0.62) !important;
+  border: 0 !important;
+  backdrop-filter: blur(2px);
+}
+
+.GANASTE_PANTALLA::before,
+#NIVEL_02 .GanastePantallaLvL2::before {
+  content: "";
+  position: absolute;
+  width: min(86vw, 680px);
+  min-height: 260px;
+  background: rgba(8, 22, 45, 0.96);
+  border: 1.5px solid #1e6fa8;
+  border-left: 5px solid #00b7ff;
+  border-radius: 8px;
+  box-shadow: 0 0 18px rgba(0, 183, 255, 0.22);
+}
+
+.GANASTE_PANTALLA h1,
+.GANASTE_PANTALLA h3,
+#NIVEL_02 .GanastePantallaLvL2 h1,
+#NIVEL_02 .GanastePantallaLvL2 h3 {
+  position: relative;
+  z-index: 1;
+  max-width: min(76vw, 560px);
+}
+
+.GANASTE_PANTALLA h1,
+#NIVEL_02 .GanastePantallaLvL2 h1 {
+  color: #ffffff !important;
+  font-size: clamp(22px, 2.4vw, 32px) !important;
+  margin: 0 0 18px 0 !important;
+  text-shadow: 0 0 10px rgba(82, 165, 219, 0.62);
+}
+
+.GANASTE_PANTALLA h3,
+#NIVEL_02 .GanastePantallaLvL2 h3 {
+  color: #c6d8e6 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.Alerta_Logro_Popup {
+  background: rgba(8, 22, 45, 0.97) !important;
+  border: 1.5px solid #1e6fa8 !important;
+  border-left: 5px solid #00b7ff !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+  padding: 26px 30px !important;
+  box-shadow: 0 0 18px rgba(0, 183, 255, 0.24) !important;
+}
+
+.Alerta_Logro_Titulo {
+  color: #ffffff !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: clamp(20px, 2vw, 28px) !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 10px rgba(82, 165, 219, 0.58) !important;
+}
+
+.Alerta_Logro_Titulo img {
+  width: 86px !important;
+  height: auto !important;
+  margin-top: 8px;
+}
+
+.Alerta_Logro_Texto {
+  color: #c6d8e6 !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+}
+
+.Alerta_Logro_Texto b {
+  color: #c6d8e6 !important;
+  font-weight: 400 !important;
+}
+
+.Alerta_Logro_Boton {
+  min-width: 190px;
+  min-height: 44px;
+  margin-top: 10px;
+  padding: 0 22px;
+  background: rgba(10, 24, 46, 0.92);
+  border: 2px solid #52a5db;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(82, 165, 219, 0.3);
+  transition: 0.3s ease;
+}
+
+.Alerta_Logro_Boton:hover {
+  background: rgba(0, 183, 255, 0.86);
+  border-color: #00ffff;
+  color: #000000;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.45);
+}
+
+.Alerta_Logro_Progreso {
+  background: #52a5db !important;
+}
+
+/* HUD de niveles: mismo tamano visual y menos pegado a la zona de la Tierra */
+.HUD_Superior_Game,
+.HUD_Inferior_Game,
+#NIVEL_02 > .Cabezeralvl2.Contenedorlvl2,
+#NIVEL3 > .Cabezeralvl3.Contenedorlvl3,
+#NIVEL_02 .HUD_Inferior_Lvl,
+#NIVEL3 .HUD_Inferior_Lvl {
+  left: 40% !important;
+  transform: translateX(-50%) !important;
+}
+
+.HUD_Box,
+#NIVEL_02 > .Cabezeralvl2 > div,
+#NIVEL3 > .Cabezeralvl3 > div {
+  min-width: 0 !important;
+  width: auto !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  box-sizing: border-box !important;
+  padding: 6px 18px !important;
+  gap: 10px !important;
+}
+
+.HUD_Volumen_Box,
+#NIVEL_02 > .Cabezeralvl2 .Volumenlvl2,
+#NIVEL3 > .Cabezeralvl3 .Volumenlvl3 {
+  min-width: 160px !important;
+  width: 160px !important;
+  justify-content: flex-start !important;
+  overflow: visible !important;
+  flex-shrink: 0 !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+.HUD_Volumen_Box i.fas.fa-volume-up,
+#NIVEL_02 > .Cabezeralvl2 .Volumenlvl2 i.fas.fa-volume-up,
+#NIVEL3 > .Cabezeralvl3 .Volumenlvl3 i.fas.fa-volume-up {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 26px !important;
+  min-width: 26px !important;
+  height: 18px !important;
+  color: #00ffff !important;
+  font-size: 14px !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  line-height: 1 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  flex: 0 0 26px !important;
+  overflow: visible !important;
+}
+
+#NIVEL_02 > .Cabezeralvl2 input[type="range"],
+#NIVEL3 > .Cabezeralvl3 input[type="range"],
+.HUD_Volumen_Box input[type="range"] {
+  width: 90px !important;
+  min-width: 90px !important;
+  flex: 0 0 90px !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.Alerta_Inicio_Popup {
+  background: rgba(8, 22, 45, 0.96) !important;
+  border: 2px solid #00b7ff !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  padding: 24px 30px !important;
+  box-shadow: 0 0 24px rgba(0, 183, 255, 0.42), inset 0 0 42px rgba(0, 183, 255, 0.12) !important;
+  overflow: hidden !important;
+}
+
+.Alerta_Inicio_Popup::before {
+  display: none;
+}
+
+.Alerta_Inicio_Titulo {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: clamp(24px, 3.2vw, 38px) !important;
+  font-weight: 900 !important;
+  letter-spacing: 4px !important;
+  line-height: 1.18 !important;
+  text-transform: uppercase !important;
+  color: #b8eaff !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.85), 0 0 22px rgba(0, 183, 255, 0.72) !important;
+}
+
+.Alerta_Inicio_Contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.Alerta_Inicio_Planeta {
+  width: 108px;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Alerta_Inicio_Planeta img {
+  width: 102px;
+  height: 102px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(0, 183, 255, 0.74));
+}
+
+.Alerta_Inicio_Texto {
+  margin: 0 !important;
+  color: #c6d8e6 !important;
+  font-family: sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+.Alerta_Inicio_Texto p {
+  max-width: 470px;
+  margin: 0 auto !important;
+}
+
+.Alerta_Inicio_Texto strong {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffffa6;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(0, 183, 255, 0.55);
+}
+
+.Alerta_Inicio_Caracteristicas {
+  width: min(100%, 430px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.Alerta_Inicio_Caracteristicas div {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(5, 38, 68, 0.72);
+  border: 1.5px solid #0c78b9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.28), inset 0 0 18px rgba(0, 183, 255, 0.12);
+}
+
+.Alerta_Inicio_Caracteristicas i {
+  color: #00ffff;
+  font-size: 24px;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.9);
+}
+
+
+
+.Alerta_Inicio_Caracteristicas span,
+.Alerta_Inicio_Cierre {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.Alerta_Inicio_Cierre {
+  color: #00ff66;
+  font-size: 17px;
+  text-shadow: 0 0 12px rgba(0, 255, 102, 0.72);
+}
+
+.Alerta_Inicio_Boton {
+  min-width: 280px;
+  min-height: 46px;
+  margin-top: 10px;
+  padding: 0 22px;
+  background: rgba(10, 24, 46, 0.92);
+  border: 2px solid #52a5db;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 0 10px rgba(82, 165, 219, 0.34);
+  transition: 0.3s ease;
+}
+
+.Alerta_Inicio_Boton:hover {
+  background: rgba(0, 183, 255, 0.86);
+  border-color: #00ffff;
+  color: #000000;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.48);
+}
+
+.Alerta_Inicio_Progreso {
+  background: #00ffff !important;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.9) !important;
+}
+
+@media (max-width: 760px) {
+  .HUD_Superior_Game,
+  .HUD_Inferior_Game,
+  #NIVEL_02 > .Cabezeralvl2.Contenedorlvl2,
+  #NIVEL3 > .Cabezeralvl3.Contenedorlvl3,
+  #NIVEL_02 .HUD_Inferior_Lvl,
+  #NIVEL3 .HUD_Inferior_Lvl {
+    left: 50% !important;
+  }
+
+  #NIVEL_02 > .Cabezeralvl2.Contenedorlvl2,
+  #NIVEL3 > .Cabezeralvl3.Contenedorlvl3 {
+    width: calc(100vw - 18px) !important;
+    gap: 8px !important;
+  }
+
+  #NIVEL_02 > .Cabezeralvl2 > div,
+  #NIVEL3 > .Cabezeralvl3 > div {
+    min-width: 0 !important;
+    padding: 4px 8px !important;
+    gap: 6px !important;
+  }
+
+  #NIVEL_02 > .Cabezeralvl2 h3,
+  #NIVEL3 > .Cabezeralvl3 h3 {
+    display: none !important;
+  }
+
+  #NIVEL_02 .HUD_Inferior_Lvl,
+  #NIVEL3 .HUD_Inferior_Lvl {
+    width: calc(100vw - 18px) !important;
+  }
+
+  .Alerta_Inicio_Popup {
+    padding: 28px 18px !important;
+  }
+
+  .Alerta_Inicio_Titulo {
+    font-size: clamp(24px, 8vw, 34px) !important;
+    letter-spacing: 3px !important;
+  }
+
+  .Alerta_Inicio_Texto {
+    font-size: 16px !important;
+  }
+
+  .Alerta_Inicio_Caracteristicas {
+    grid-template-columns: 1fr;
+    max-width: 260px;
+  }
+
+  .Alerta_Inicio_Boton {
+    min-width: 0;
+    width: min(100%, 320px);
+    font-size: 13px;
+  }
+}
+
+/* Iconos locales: no dependen de la fuente externa Font Awesome */
+.Regla_Icono i,
+.HUD_Box i,
+#NIVEL_02 > .Cabezeralvl2 i,
+#NIVEL3 > .Cabezeralvl3 i,
+.Boton_Pausar_HUD i,
+.HUD_Escudo_Barra i,
+#Seccion_2 #VOLUMEN,
+#Seccion_2 #PAUSE,
+.Alerta_Inicio_Caracteristicas i,
+.NEXT i {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 24px !important;
+  flex: 0 0 24px !important;
+  color: #00ffff !important;
+  font-family: Arial, "Segoe UI Symbol", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  font-style: normal !important;
+  text-align: center !important;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.85);
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.Regla_Icono i::before,
+.HUD_Box i::before,
+#NIVEL_02 > .Cabezeralvl2 i::before,
+#NIVEL3 > .Cabezeralvl3 i::before,
+.Boton_Pausar_HUD i::before,
+.HUD_Escudo_Barra i::before,
+#Seccion_2 #VOLUMEN::before,
+#Seccion_2 #PAUSE::before,
+.Alerta_Inicio_Caracteristicas i::before,
+.NEXT i::before {
+  font-family: Arial, "Segoe UI Symbol", sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.fa-bolt::before { content: "\26A1" !important; }
+.fa-fire::before { content: "\25C6" !important; color: #ff9b2f; text-shadow: 0 0 12px rgba(255, 120, 20, 0.9); }
+.fa-trophy::before { content: "\2605" !important; color: #ffdd66; text-shadow: 0 0 12px rgba(255, 221, 102, 0.9); }
+.fa-stopwatch::before,
+.fa-clock::before { content: "\25F7" !important; }
+.fa-crosshairs::before { content: "\2295" !important; }
+.fa-volume-up::before { content: "\25B0" !important; }
+.fa-shield-alt::before { content: "\2B1F" !important; }
+.fa-pause::before { content: "II" !important; }
+.fa-play::before { content: "\25B6" !important; }
+.fa-arrow-right::before { content: ">" !important; }
+
+#Seccion_2 #VOLUMEN,
+#Seccion_2 #PAUSE {
+  width: 24px !important;
+  min-width: 24px !important;
+  flex: 0 0 24px !important;
+}
+
+#Seccion_2 #PAUSE {
+  display: none !important;
+}
+
+#Seccion_2 #VOLUMEN[style*="display: none"] {
+  display: none !important;
+}
+
+#Seccion_2 #PAUSE[style*="display: inline-flex"] {
+  display: inline-flex !important;
+}
+
+.Regla_Icono .fa-fire::before {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.85);
+}
+
+.HUD_Volumen_Box i.fas.fa-volume-up,
+#NIVEL_02 > .Cabezeralvl2 .Volumenlvl2 i.fas.fa-volume-up,
+#NIVEL3 > .Cabezeralvl3 .Volumenlvl3 i.fas.fa-volume-up {
+  font-family: Arial, "Segoe UI Symbol", sans-serif !important;
+  font-size: 16px !important;
+}
